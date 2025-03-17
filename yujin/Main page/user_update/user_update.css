@@ -1,0 +1,134 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+}
+
+.title {
+    padding: 10px 0px;
+}
+
+.second_title {
+    color: #777777;
+    margin: 5px 0px;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+span {
+    height: 21px;
+    font-size: 11px;
+    
+}
+.user_group > .checkbox {
+    display: inline-block;
+}
+
+.checkbox {
+    height: 21px;
+    
+} */
+
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.box1{
+    width: 1080px; 
+    margin: 0 auto;
+}
+
+.box2 {
+    display: flex; 
+    justify-content: center;
+}
+
+.box3 {
+    width: 600px; 
+    padding: 50px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* 제목 스타일 */
+.title {
+    padding: 10px 0;
+}
+
+.second_title {
+    color: #777;
+    margin: 5px 0;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* 체크박스 그룹 */
+.user_group {
+    display: flex;
+    gap: 15px; /* 체크박스 간격 조정 */
+    margin-bottom: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox input {
+    width: 16px;
+    height: 16px;
+}
+
+/* 폼 스타일 */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.text:focus {
+    border-color: #333;
+}
+
+.btn {
+    text-align: right;
+}
+
+.btnElement {
+    padding-left: 8px;
+    padding-top: 25px;
+}
+
+.element {
+    padding: 3px 15px;
+    color: #000000;
+    font-weight: bolder;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    border-color: #D9D9D9;
+}

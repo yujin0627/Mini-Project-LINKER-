@@ -1,0 +1,183 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;               /* 모든 요소의 기본 margin을 0으로 설정 */
+    padding: 0;              /* 모든 요소의 기본 padding을 0으로 설정 */
+    box-sizing: border-box;  /* padding과 border를 포함하여 요소 크기를 계산하도록 설정 */
+    text-decoration: none;   /* 링크에 기본적으로 적용되는 밑줄을 없애줌 */
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;   /* 글꼴을 Arial로 설정 (대체 글꼴로 sans-serif) */
+    background-color: #f4f4f4;       /* 페이지 배경색을 연한 회색으로 설정 */
+    color: #333;                     /* 기본 글씨 색상: 검은색 */
+}
+
+/* Wrapper around the entire header */
+#wrap {
+    width: 100%;    /* 전체 화면 너비를 100%로 설정 */
+}
+
+/* Header section */
+#header {
+    background-color: #fff;   /* 헤더 배경색을 흰색으로 설정 */
+    color: #fff;              /* 헤더 텍스트 색상을 흰색으로 설정 */
+    padding: 20px 0;          /* 헤더 상하 여백을 20px로 설정 */
+}
+
+/* Header content area */
+.header_area {
+    margin: 0 auto;   /* 중앙 정렬을 위해 왼쪽과 오른쪽 마진을 자동으로 설정 */
+    padding: 0 20px;  /* 왼쪽과 오른쪽 패딩을 20px로 설정 */
+}
+
+/* Linker title style */
+.Linker {
+    font-size: 24px;   /* 글자 크기를 24px로 설정 */
+    font-weight: bold; /* 글자 두께를 굵게 설정 */
+    display: inline-block; /* 인라인 블록으로 표시하여 좌우 여백을 가질 수 있게 설정 */
+}
+
+/* Menu toggle button (for mobile view) */
+.openMOgnb {
+    display: inline-block;   /* 인라인 블록 요소로 표시 */
+    cursor: pointer;         /* 마우스 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+    font-size: 16px;          /* 글자 크기를 16px로 설정 */
+    color: #fff;              /* 텍스트 색상을 흰색으로 설정 */
+    padding: 10px;            /* 상하좌우 여백을 10px로 설정 */
+    margin-left: 20px;        /* 왼쪽 마진을 20px로 설정 */
+}
+
+.openMOgnb span {
+    display: block;           /* 블록 요소로 표시하여 세로로 정렬되도록 설정 */
+    background-color: #fff;   /* 배경색을 흰색으로 설정 */
+    height: 2px;              /* 높이를 2px로 설정 */
+    width: 20px;              /* 너비를 20px로 설정 */
+    margin: 5px 0;            /* 상하 여백을 5px로 설정 */
+}
+
+/* Utility links (Login, Join, etc.) */
+.util {
+    float: right;             /* 오른쪽으로 정렬 */
+    list-style: none;         /* 리스트 스타일을 제거 */
+}
+
+.util li {
+    display: inline-block;    /* 인라인 블록 요소로 표시 */
+    margin-left: 20px;        /* 왼쪽 마진을 20px로 설정 */
+}
+
+.util a {
+    color: #333;              /* 링크 색상을 기본 글씨 색상인 검은색으로 설정 */
+    text-decoration: none;    /* 링크 밑줄을 없앰 */
+    font-size: 16px;          /* 글자 크기를 16px로 설정 */
+}
+
+/* Navigation menu (GNB) */
+nav {
+    margin-top: 20px; /* 내비게이션 메뉴의 위쪽 마진을 20px로 설정 */
+}
+
+/* GNB list styling */
+.gnb {
+    list-style: none;  /* 기본 리스트 스타일을 제거 */
+}
+
+/* Styling each li element in the navigation to ensure uniform size */
+.gnb > .menu {
+    display: inline-block;   /* 인라인 블록 요소로 표시 */
+    margin: 10px;      /* 오른쪽 마진을 30px로 설정하여 항목 사이에 간격을 둠 */
+    position: relative;      /* 위치 설정을 위한 상대적 위치 설정 */
+    width: 200px;            /* 각 li 요소의 너비를 200px로 설정 */
+    height: 50px;            /* 각 li 요소의 높이를 50px로 설정 */
+    padding: 5px 10px;       /* 내부 패딩을 5px 상하, 10px 좌우로 설정 */
+    box-sizing: border-box;  /* padding과 border를 포함하여 전체 크기를 계산 */
+    text-align: center;
+    line-height: 50px;
+}
+
+/* Default link color for navigation */
+.gnb a {
+    color: #333;             /* 링크 텍스트 색상을 기본 글씨 색상인 검은색으로 설정 */
+    text-decoration: none;   /* 링크 밑줄을 없앰 */
+    font-size: 18px;         /* 글자 크기를 18px로 설정 */
+    padding: 5px 10px;       /* 링크에 패딩을 5px 상하, 10px 좌우로 설정 */
+    transition: background-color 0.3s, color 0.3s; /* 배경색과 텍스트 색상이 부드럽게 전환되도록 설정 */
+}
+
+/* Change styles on hover for navigation links */
+.gnb a:hover {
+    color: #fff;                  /* 마우스를 올리면 글씨 색상이 흰색으로 변경 */
+    /* background-color: #E2DCA7;  */    /* 마우스를 올리면 배경색이 #E2DCA7로 변경 */
+}
+
+.gnb > .menu:hover {
+    background-color: #E2DCA7;
+}
+
+/* Submenu dropdowns */
+.gnb_depth {
+    display: none;                /* 기본적으로 서브메뉴는 숨김 */
+    position: absolute;           /* 서브메뉴를 절대 위치로 설정 */
+    top: 100%;                    /* 부모 li의 아래에 위치하도록 설정 */
+    left: 0;                      /* 왼쪽 정렬 */
+    background-color: #444;       /* 서브메뉴 배경색을 어두운 회색으로 설정 */
+    padding: 10px;                /* 서브메뉴의 패딩을 10px로 설정 */
+    border-radius: 5px;           /* 서브메뉴의 모서리를 둥글게 설정 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 서브메뉴에 그림자 효과 추가 */
+}
+
+.gnb li:hover .gnb_depth {
+    display: block;   /* 부모 li에 마우스를 올리면 서브메뉴가 보이도록 설정 */
+}
+
+/* Submenu items */
+.submenu_list {
+    list-style: none;  /* 서브메뉴의 리스트 스타일을 제거 */
+}
+
+.submenu_list li {
+    margin: 20px 0;  /* 서브메뉴 항목 사이에 상하 간격을 30px로 설정 */
+
+}
+
+.submenu_list a {
+    color: #fff;      /* 서브메뉴 항목의 텍스트 색상은 흰색으로 설정 */
+    text-decoration: none;  /* 서브메뉴 항목에 밑줄을 없앰 */
+}
+
+/* Input text box and search button */
+.gnb li input[type="text"] {
+    padding: 8px;          /* 텍스트 입력 박스 안의 여백을 8px로 설정 */
+    font-size: 16px;       /* 텍스트 입력 박스 안의 글자 크기를 16px로 설정 */
+    border: 1px solid #ddd; /* 연한 회색 테두리 설정 */
+    border-radius: 5px;    /* 둥근 테두리 적용 */
+    background-color: #fff; /* 흰색 배경 */
+    color: #333;           /* 검은색 텍스트 */
+    width: 200px;          /* 입력 박스의 너비를 200px로 설정 */
+}
+
+/* Search icon button */
+.ic_search {
+    background-color: #fff; /* 흰색 배경 */
+    border: 1px solid #ddd; /* 연한 회색 테두리 */
+    border-radius: 5px;     /* 둥근 테두리 적용 */
+    cursor: pointer;        /* 마우스 커서를 포인터로 변경 */
+    margin-left: 10px;       /* 왼쪽 마진을 10px로 설정 */
+    padding: 8px;            /* 버튼 안의 여백을 8px로 설정 */
+}
+
+.ic_search img {
+    width: 20px;    /* 아이콘의 너비를 20px로 설정 */
+    height: 20px;   /* 아이콘의 높이를 20px로 설정 */
+}
+
+/* Close pop-up button */
+.closePop a {
+    color: #fff;         /* 텍스트 색상을 흰색으로 설정 */
+    text-decoration: none; /* 밑줄을 없앰 */
+    font-size: 16px;       /* 글자 크기를 16px로 설정 */
+    display: block;        /* 블록 요소로 설정하여 하나의 줄에 표시 */
+    margin-top: 20px;      /* 위쪽 마진을 20px로 설정 */
+    text-align: center;    /* 텍스트를 중앙 정렬 */
+}
